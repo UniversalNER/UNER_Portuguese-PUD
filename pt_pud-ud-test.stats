@@ -1,0 +1,56 @@
+{
+  "dataset_id": "pt_pud-ud-test",
+  "num_documents": 397,
+  "num_annotated_documents": 397,
+  "num_annotations": 5174,
+  "num_annotators": 2,
+  "annotator_ids": [
+    "borje",
+    "marek"
+  ],
+  "num_docs_with_multiple_annotators": 2,
+  "num_sentences": 1000,
+  "num_tokens": 23407,
+  "label_distribution": {
+    "LOC": 488,
+    "PER": 413,
+    "ORG": 198
+  },
+  "pairwise_f1": {
+    "ref:borje, pred:marek": {
+      "num_common_annotated_docs": 2,
+      "LOC": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "ORG": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "PER": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      }
+    },
+    "average": {
+      "LOC": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1": 0.8
+      },
+      "ORG": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5
+      },
+      "PER": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
+        "f1": 0.8
+      }
+    }
+  }
+}

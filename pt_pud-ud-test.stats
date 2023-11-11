@@ -2,13 +2,14 @@
   "dataset_id": "pt_pud-ud-test",
   "num_documents": 397,
   "num_annotated_documents": 397,
-  "num_annotations": 5174,
-  "num_annotators": 2,
+  "num_annotations": 5542,
+  "num_annotators": 3,
   "annotator_ids": [
     "borje",
-    "marek"
+    "marek",
+    "mrskarlsson"
   ],
-  "num_docs_with_multiple_annotators": 2,
+  "num_docs_with_multiple_annotators": 59,
   "num_sentences": 1000,
   "num_tokens": 23407,
   "label_distribution": {
@@ -35,10 +36,29 @@
         "f1": 0.8
       }
     },
-    "average": {
+    "ref:borje, pred:mrskarlsson": {
+      "num_common_annotated_docs": 59,
       "LOC": {
-        "precision": 0.6666666666666666,
-        "recall": 1.0,
+        "precision": 0.8714285714285714,
+        "recall": 0.9384615384615385,
+        "f1": 0.9037037037037037
+      },
+      "ORG": {
+        "precision": 0.90625,
+        "recall": 0.9354838709677419,
+        "f1": 0.9206349206349206
+      },
+      "PER": {
+        "precision": 0.9857142857142858,
+        "recall": 0.9857142857142858,
+        "f1": 0.9857142857142858
+      }
+    },
+    "ref:marek, pred:mrskarlsson": {
+      "num_common_annotated_docs": 2,
+      "LOC": {
+        "precision": 1.0,
+        "recall": 0.6666666666666666,
         "f1": 0.8
       },
       "ORG": {
@@ -47,9 +67,26 @@
         "f1": 0.5
       },
       "PER": {
-        "precision": 1.0,
-        "recall": 0.6666666666666666,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
         "f1": 0.8
+      }
+    },
+    "average": {
+      "LOC": {
+        "precision": 0.846031746031746,
+        "recall": 0.8683760683760684,
+        "f1": 0.834567901234568
+      },
+      "ORG": {
+        "precision": 0.6354166666666666,
+        "recall": 0.6451612903225806,
+        "f1": 0.6402116402116401
+      },
+      "PER": {
+        "precision": 0.8841269841269841,
+        "recall": 0.8841269841269841,
+        "f1": 0.861904761904762
       }
     }
   }
